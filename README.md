@@ -1,3 +1,8 @@
+This fault described here is Python 3.7.0 related. The bug has been already fixed in latest 3.7 branch. I am keeping this repo here for a while so that others can test this fault if they are interested.
+More info: https://bugs.python.org/issue34241
+
+- - -
+
 # Django template rendering crash
 
 ## Prerequisites
@@ -27,5 +32,4 @@ becomes
 
 **<p><a href="{% url 'cas_ng_login' %}?next=/">{% trans "Kirjaudu sisään käyttäen Opintopolun tunnuksi." %}</a></p>**
 
-Refresh your web browser, and it should crash: `Segmentation faul  (core dumped) python manage.py runserver`
-
+Refresh your web browser, and it should crash: `Segmentation fault  (core dumped) python manage.py runserver`
